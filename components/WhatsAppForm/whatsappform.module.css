@@ -1,0 +1,246 @@
+.form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.block {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, var(--surface), var(--bg-soft));
+  padding: 1.8rem;
+  display: grid;
+  gap: 1.2rem;
+  min-width: 0;
+}
+
+.block legend {
+  font-family: var(--font-serif), serif;
+  font-size: 1.6rem;
+  color: var(--gold);
+  padding: 0 0.6rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.45rem;
+  min-width: 0;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.label svg {
+  color: var(--gold);
+}
+
+.input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: rgba(20, 9, 7, 0.6);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input::placeholder {
+  color: rgba(205, 183, 166, 0.5);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(232, 201, 160, 0.15);
+}
+
+textarea.input {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* Bouton "autres prestation" */
+.toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+
+.toggleBtn {
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  transition: all 0.2s ease;
+}
+
+.toggleBtn:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.toggleActive {
+  background: linear-gradient(135deg, var(--rose), var(--bordeaux));
+  border-color: transparent;
+  color: #fff;
+}
+
+.toggleActive:hover {
+  color: #fff;
+}
+
+/* Cases à cocher */
+.extras {
+  display: grid;
+  gap: 1.2rem;
+  padding-top: 0.4rem;
+  border-top: 1px dashed var(--line);
+}
+
+.groupTitle {
+  color: var(--gold);
+  margin: 0.6rem 0 0.6rem;
+  font-size: 0.95rem;
+}
+
+.checkList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+}
+
+.check {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.check input {
+  position: absolute;
+  opacity: 0;
+  inset: 0;
+  cursor: pointer;
+}
+
+.check:focus-within {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.checkOn {
+  border-color: var(--rose);
+  background: rgba(214, 82, 124, 0.12);
+}
+
+.checkBox {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: 1px solid var(--gold-deep);
+  color: #fff;
+}
+
+.checkOn .checkBox {
+  background: var(--rose);
+  border-color: var(--rose);
+}
+
+.checkText {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.93rem;
+  line-height: 1.3;
+}
+
+.checkText small {
+  color: var(--muted);
+}
+
+/* Récapitulatif */
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 1.6rem 1.8rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(400px 200px at 0% 0%, rgba(214, 82, 124, 0.25), transparent 70%),
+    var(--surface);
+}
+
+.summaryLabel {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.summaryTotal {
+  font-family: var(--font-serif), serif;
+  font-size: 2.2rem;
+  color: var(--gold);
+  line-height: 1.1;
+}
+
+.summaryNote {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.submit {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+}
+
+.submit:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .block {
+    padding: 1.3rem 1.1rem;
+  }
+
+  .row, .checkList {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .toggle {
+    grid-template-columns: 1fr;
+  }
+
+  .summary {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .submit {
+    width: 100%;
+  }
+}

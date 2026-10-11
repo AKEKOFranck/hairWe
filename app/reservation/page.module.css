@@ -1,0 +1,19 @@
+.page {
+  padding-top: calc(var(--header-h) + 3.5rem);
+  max-width: 860px;
+}
+
+.head {
+  margin-bottom: 2.2rem;
+}
+
+.title {
+  font-size: clamp(2.4rem, 5.5vw, 4rem);
+  margin-bottom: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding-top: calc(var(--header-h) + 2rem);
+  }
+}

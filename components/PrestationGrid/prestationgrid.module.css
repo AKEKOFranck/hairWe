@@ -1,0 +1,132 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, var(--surface), var(--bg-soft));
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(214, 82, 124, 0.55);
+  box-shadow: 0 24px 50px -28px rgba(214, 82, 124, 0.6);
+}
+
+.media {
+  position: relative;
+  aspect-ratio: 4 / 4.4;
+  overflow: hidden;
+}
+
+.img {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .img {
+  transform: scale(1.04);
+}
+
+.badge {
+  position: absolute;
+  left: 0.9rem;
+  top: 0.9rem;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.78rem;
+  border-radius: 999px;
+  background: rgba(20, 9, 7, 0.72);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--line);
+  color: var(--gold);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 1.4rem 1.4rem 1.6rem;
+  flex: 1;
+}
+
+.name {
+  font-size: 1.7rem;
+}
+
+.desc {
+  color: var(--muted);
+  font-size: 0.95rem;
+  flex: 1;
+}
+
+.meta {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  border-top: 1px solid var(--line);
+  padding-top: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+.duration {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.duration svg {
+  color: var(--gold);
+}
+
+.price {
+  text-align: right;
+  font-family: var(--font-serif), serif;
+  font-size: 1.45rem;
+  color: var(--gold);
+  line-height: 1.1;
+}
+
+.price span {
+  display: block;
+  font-family: var(--font-sans), sans-serif;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.reserve {
+  width: 100%;
+  margin-top: 0.4rem;
+}
+
+.empty {
+  color: var(--muted);
+  text-align: center;
+  padding: 3rem 0;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+  }
+
+  .media {
+    aspect-ratio: 4 / 3.6;
+  }
+}

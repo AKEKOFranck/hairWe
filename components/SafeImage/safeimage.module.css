@@ -1,0 +1,8 @@
+.placeholder {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 70% 25%, rgba(214, 82, 124, 0.45), transparent 55%),
+    radial-gradient(circle at 20% 80%, rgba(232, 201, 160, 0.25), transparent 55%),
+    linear-gradient(160deg, #3a1a14, #1a0c09);
+}

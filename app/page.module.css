@@ -1,0 +1,241 @@
+/* ---------- HERO ---------- */
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-top: var(--header-h);
+  overflow: hidden;
+}
+
+.heroMedia {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.heroImage {
+  object-fit: cover;
+  object-position: 75% 20%;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(20, 9, 7, 0.96) 0%, rgba(20, 9, 7, 0.78) 38%, rgba(20, 9, 7, 0.1) 70%),
+    linear-gradient(0deg, rgba(20, 9, 7, 0.9) 0%, transparent 35%);
+}
+
+.heroContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-block: 3rem;
+}
+
+.heroTitle {
+  font-size: clamp(2.8rem, 6.4vw, 5.4rem);
+  max-width: 14ch;
+  margin-bottom: 1.2rem;
+}
+
+.heroTitle em {
+  color: var(--gold);
+  font-style: normal;
+  display: block;
+}
+
+.heroText {
+  max-width: 40ch;
+  color: #eadccf;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding-block: 1.5rem 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.highlight {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  border-radius: 16px;
+  transition: background 0.2s ease;
+}
+
+.highlight:hover {
+  background: rgba(232, 201, 160, 0.08);
+}
+
+.highlightIcon {
+  width: 54px;
+  height: 54px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+}
+
+.highlight strong {
+  display: block;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.highlight small {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+/* ---------- SECTIONS ---------- */
+.section {
+  padding-top: 6rem;
+}
+
+.sectionHead {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.sectionHead .section-title {
+  margin-bottom: 0.5rem;
+}
+
+.reasons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.2rem;
+}
+
+.reason {
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, var(--surface), var(--bg-soft));
+}
+
+.reasonIcon {
+  display: inline-flex;
+  width: 52px;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  margin-bottom: 1.1rem;
+  color: #fff;
+  background: linear-gradient(135deg, var(--rose), var(--bordeaux));
+}
+
+.reason h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.reason p {
+  color: var(--muted);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2.2rem;
+}
+
+.step {
+  padding-left: 1.4rem;
+  border-left: 2px solid var(--rose);
+}
+
+.step svg {
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+}
+
+.step h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.step p {
+  color: var(--muted);
+}
+
+.final {
+  margin-top: 6rem;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 32px;
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(500px 260px at 50% 0%, rgba(214, 82, 124, 0.35), transparent 70%),
+    var(--surface);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.final .section-lead {
+  margin-bottom: 1.2rem;
+}
+
+/* ---------- TABLETTE ---------- */
+@media (max-width: 1024px) {
+  .heroImage {
+    object-position: 70% 15%;
+  }
+
+  .reasons, .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding-top: 4.5rem;
+  }
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+  .heroOverlay {
+    background: linear-gradient(0deg, rgba(20, 9, 7, 0.97) 8%, rgba(20, 9, 7, 0.55) 55%, rgba(20, 9, 7, 0.25) 100%);
+  }
+
+  .heroImage {
+    object-position: 70% top;
+  }
+
+  .heroContent {
+    justify-content: flex-end;
+    padding-block: 2rem;
+  }
+
+  .highlights {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+    padding-block: 1rem 1.5rem;
+  }
+
+  .final {
+    padding: 3rem 1.25rem;
+    border-radius: 24px;
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "categories": [
+    {
+      "label": "Naturel & quotidien",
+      "slug": "jour"
+    },
+    {
+      "label": "Soirée & glamour",
+      "slug": "soiree"
+    },
+    {
+      "label": "Mariage & cérémonies",
+      "slug": "mariage"
+    },
+    {
+      "label": "Shooting & pro",
+      "slug": "pro"
+    },
+    {
+      "label": "Cours & conseils",
+      "slug": "cours"
+    }
+  ],
+  "devise": "FCFA",
+  "label": "Maquillage",
+  "note": "Prix indicatifs à Abidjan, à partir de. Un essai est conseillé pour les mariages. Déplacement à domicile possible, nous contacter.",
+  "prestation": [
+    {
+      "categorie": "jour",
+      "description": "Un teint frais, des yeux soulignés, un rendu léger qui sublime sans se voir.",
+      "duree": "45 min",
+      "id": "maquillage-naturel",
+      "image": "/images/maquillage/posteMake (1).jpg",
+      "nom": "Maquillage naturel",
+      "populaire": true,
+      "prix": 10000
+    },
+    {
+      "categorie": "soiree",
+      "description": "Teint lumineux, regard intense et lèvres affirmées pour briller en soirée.",
+      "duree": "1 h",
+      "id": "maquillage-glamour",
+      "image": "/images/maquillage/posteMake (2).jpg",
+      "nom": "Maquillage glamour",
+      "populaire": true,
+      "prix": 18000
+    },
+    {
+      "categorie": "soiree",
+      "description": "Cils en bandes ou en touffes, choisis selon la forme de ton œil.",
+      "duree": "30 min",
+      "id": "pose-cils",
+      "image": "/images/maquillage/posteMake (3).jpg",
+      "nom": "Pose de cils",
+      "populaire": false,
+      "prix": 8000
+    },
+    {
+      "categorie": "mariage",
+      "description": "Un maquillage tenue longue durée, pensé pour les photos et pour la journée entière. Essai inclus.",
+      "duree": "2 h",
+      "id": "maquillage-mariee",
+      "image": "/images/maquillage/posteMake (2).jpg",
+      "nom": "Maquillage de mariée",
+      "populaire": true,
+      "prix": 60000
+    },
+    {
+      "categorie": "mariage",
+      "description": "Des tons chauds et dorés qui mettent en valeur les tenues et les pagnes de cérémonie.",
+      "duree": "1 h 30",
+      "id": "maquillage-coutumier",
+      "image": "/images/maquillage/posteMake (3).jpg",
+      "nom": "Maquillage mariage coutumier",
+      "populaire": false,
+      "prix": 35000
+    },
+    {
+      "categorie": "mariage",
+      "description": "Pour les demoiselles d'honneur, la famille et les invitées qui veulent être impeccables.",
+      "duree": "1 h",
+      "id": "maquillage-invitee",
+      "image": "/images/maquillage/posteMake (1).jpg",
+      "nom": "Maquillage invitée",
+      "populaire": false,
+      "prix": 20000
+    },
+    {
+      "categorie": "pro",
+      "description": "Maquillage adapté à la lumière du studio ou du plein air, retouches sur place possibles.",
+      "duree": "1 h 30",
+      "id": "maquillage-shooting",
+      "image": "/images/maquillage/posteMake (3).jpg",
+      "nom": "Maquillage shooting photo",
+      "populaire": false,
+      "prix": 25000
+    },
+    {
+      "categorie": "cours",
+      "description": "Apprends à choisir tes teintes et à te maquiller seule, produits et gestes adaptés à ta peau.",
+      "duree": "2 h",
+      "id": "cours-automaquillage",
+      "image": "/images/maquillage/posteMake (1).jpg",
+      "nom": "Cours d'auto-maquillage",
+      "populaire": false,
+      "prix": 30000
+    }
+  ],
+  "type": "makeup"
+}

@@ -1,0 +1,170 @@
+{
+  "categories": [
+    {
+      "label": "Tresses & nattes",
+      "slug": "tresses"
+    },
+    {
+      "label": "Tissages & perruques",
+      "slug": "tissages"
+    },
+    {
+      "label": "Mariage & cérémonie",
+      "slug": "ceremonie"
+    },
+    {
+      "label": "Enfants",
+      "slug": "enfants"
+    },
+    {
+      "label": "Soins & lissage",
+      "slug": "soins"
+    }
+  ],
+  "devise": "FCFA",
+  "label": "Coiffures",
+  "note": "Prix indicatifs à Abidjan, à partir de. Le tarif final dépend de la longueur, de la taille des tresses et du nombre de mèches. Les mèches sont à prévoir, sauf mention contraire.",
+  "prestation": [
+    {
+      "categorie": "tresses",
+      "description": "Tresses indépendantes, protectrices et légères, de la taille de ton choix.",
+      "duree": "5 à 7 h",
+      "id": "box-braids",
+      "image": "/images/coiffure/posteHair (1).png",
+      "nom": "Box braids",
+      "populaire": true,
+      "prix": 20000
+    },
+    {
+      "categorie": "tresses",
+      "description": "Tresses sans nœud à la racine, très confortables et au rendu naturel.",
+      "duree": "6 à 8 h",
+      "id": "knotless-braids",
+      "image": "/images/coiffure/posteHair (2).png",
+      "nom": "Knotless braids",
+      "populaire": true,
+      "prix": 30000
+    },
+    {
+      "categorie": "tresses",
+      "description": "Nattes collées sur le devant, tresses sur les côtés, perles et bijoux de cheveux en option.",
+      "duree": "3 à 4 h",
+      "id": "fulani-braids",
+      "image": "/images/coiffure/posteHair (3).png",
+      "nom": "Fulani braids",
+      "populaire": false,
+      "prix": 18000
+    },
+    {
+      "categorie": "tresses",
+      "description": "Nattes collées classiques ou dessinées (motifs, zigzag, cœur), sans mèches ou avec rajouts.",
+      "duree": "1 h 30 à 2 h 30",
+      "id": "cornrows",
+      "image": "/images/coiffure/posteHair (1).png",
+      "nom": "Tresses collées",
+      "populaire": false,
+      "prix": 7000
+    },
+    {
+      "categorie": "tresses",
+      "description": "Twists à la main, avec ou sans rajouts, idéales pour une coiffure durable et facile à vivre.",
+      "duree": "3 h",
+      "id": "vanilles",
+      "image": "/images/coiffure/posteHair (3).png",
+      "nom": "Vanilles",
+      "populaire": false,
+      "prix": 12000
+    },
+    {
+      "categorie": "tresses",
+      "description": "Longues torsades régulières avec mèches, un grand classique des soirées comme du quotidien.",
+      "duree": "4 à 5 h",
+      "id": "twists-senegalais",
+      "image": "/images/coiffure/posteHair (2).png",
+      "nom": "Twists sénégalais",
+      "populaire": false,
+      "prix": 20000
+    },
+    {
+      "categorie": "tresses",
+      "description": "Locks de style bohème ou lisses, légers et très tendance.",
+      "duree": "6 à 8 h",
+      "id": "faux-locs",
+      "image": "/images/coiffure/posteHair (2).png",
+      "nom": "Faux locs",
+      "populaire": true,
+      "prix": 35000
+    },
+    {
+      "categorie": "tissages",
+      "description": "Tissage avec closure ou frontal, cousu proprement et coiffé selon ton envie. Mèches non incluses.",
+      "duree": "2 à 3 h",
+      "id": "pose-tissage",
+      "image": "/images/coiffure/posteHair (3).png",
+      "nom": "Pose de tissage",
+      "populaire": false,
+      "prix": 15000
+    },
+    {
+      "categorie": "tissages",
+      "description": "Découpe de la dentelle, ajustement, pose et coiffage pour une perruque qui se fond sur ta peau.",
+      "duree": "2 h",
+      "id": "pose-perruque",
+      "image": "/images/coiffure/posteHair (1).png",
+      "nom": "Pose et coiffage de perruque",
+      "populaire": true,
+      "prix": 20000
+    },
+    {
+      "categorie": "tissages",
+      "description": "Pose de mèches au crochet sur nattes collées, rapide et volume garanti.",
+      "duree": "2 à 3 h",
+      "id": "crochet-braids",
+      "image": "/images/coiffure/posteHair (2).png",
+      "nom": "Crochet braids",
+      "populaire": false,
+      "prix": 15000
+    },
+    {
+      "categorie": "ceremonie",
+      "description": "Chignon, tresses sculptées ou coiffure tissée, essai conseillé avant le jour J.",
+      "duree": "2 à 3 h",
+      "id": "coiffure-mariee",
+      "image": "/images/coiffure/posteHair (3).png",
+      "nom": "Coiffure de mariée",
+      "populaire": true,
+      "prix": 50000
+    },
+    {
+      "categorie": "ceremonie",
+      "description": "Pour un baptême, une soirée, un anniversaire ou un mariage coutumier.",
+      "duree": "1 h 30 à 2 h 30",
+      "id": "coiffure-ceremonie",
+      "image": "/images/coiffure/posteHair (1).png",
+      "nom": "Coiffure de cérémonie",
+      "populaire": false,
+      "prix": 25000
+    },
+    {
+      "categorie": "enfants",
+      "description": "Nattes et tresses douces pour les petites filles, avec perles ou accessoires.",
+      "duree": "1 h 30",
+      "id": "tresses-enfants",
+      "image": "/images/coiffure/posteHair (2).png",
+      "nom": "Tresses enfants",
+      "populaire": false,
+      "prix": 4000
+    },
+    {
+      "categorie": "soins",
+      "description": "Shampoing, soin profond et brushing pour des cheveux souples et brillants.",
+      "duree": "1 h 30",
+      "id": "soin-lissage",
+      "image": "/images/coiffure/posteHair (3).png",
+      "nom": "Soin, brushing et lissage",
+      "populaire": false,
+      "prix": 8000
+    }
+  ],
+  "type": "coiffure"
+}
